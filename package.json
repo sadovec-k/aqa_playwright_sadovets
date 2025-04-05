@@ -1,0 +1,22 @@
+{
+  "name": "aqa_playwright_sadovets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadovec-k/aqa_playwright_sadovets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sadovec-k/aqa_playwright_sadovets/issues"
+  },
+  "homepage": "https://github.com/sadovec-k/aqa_playwright_sadovets#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.13.14"
+  }
+}
