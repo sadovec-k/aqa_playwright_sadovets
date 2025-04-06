@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import * as Utils from './Utils.js';
+import * as Utils from './utils/Utils.js';
 
 let newUserEmail = '';
 
@@ -578,17 +578,5 @@ test.describe('two tests', () => {
         await page.locator('//button[text()=\'Register\']').click();  
         await expect(page.locator('//button[@id="userNavDropdown"]')).toBeVisible();
 	});
-
-    // //Login with new user
-    // test('Login using new user', async ({ page }) => {
-    //     await page.locator('.header_signin').click();
-    //     await expect(page.locator('.modal-title','Log in')).toBeVisible();
-                
-    //     await page.locator('[id=signinEmail]').fill(globalThis.newUserEmail);
-    //     await page.locator('[id=signinPassword]').fill(Utils.CorrectData.PASSWORD);
-    //     await page.locator('//button[text()=\'Login\']').click();
-        
-    //     await expect(page.locator('//button[@id="userNavDropdown"]')).toBeVisible();
-	// });
 
 });
