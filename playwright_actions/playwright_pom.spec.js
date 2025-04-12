@@ -13,7 +13,7 @@ test.describe('two tests', () => {
         //     username: 'guest',
         //     password: 'welcome2qauto'
         //   });
-        await page.goto('https://guest:welcome2qauto@qauto.forstudy.space/');
+        await page.goto('/');
 
         await expect(page).toHaveTitle('Hillel Qauto');
         
