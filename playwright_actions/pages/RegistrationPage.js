@@ -1,6 +1,6 @@
-import BasePage from './BasePage.js';
+import { BasePage } from './BasePage.js';
 
-class RegistrationPage extends BasePage{
+export class RegistrationPage extends BasePage{
     constructor(page) {
       super(page);
       this.title = page.locator('.modal-title','Registration');
@@ -31,5 +31,3 @@ class RegistrationPage extends BasePage{
     }
   
   }
-
-  module.exports = RegistrationPage ;

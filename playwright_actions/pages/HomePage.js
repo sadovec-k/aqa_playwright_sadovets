@@ -1,6 +1,6 @@
-import BasePage from './BasePage.js';
+import { BasePage } from './BasePage.js';
 
-class HomePage extends BasePage {
+export class HomePage extends BasePage {
     constructor(page) {
       super(page);
       this.loginButton = page.locator('.header_signin');
@@ -8,6 +8,4 @@ class HomePage extends BasePage {
     }
   
   }
-
-  module.exports = HomePage;
   

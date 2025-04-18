@@ -1,14 +1,18 @@
-import BasePage from './BasePage.js';
+import { BasePage } from './BasePage.js';
 
-class LoginPage extends BasePage {
+export class LoginPage extends BasePage {
     constructor(page) {
       super(page);
       this.title = page.locator('.modal-title','Log in');
-  
+      this.inputEmail = page.locator('[id=signinEmail]');
+      this.inputPassword = page.locator('[id=signinPassword]');
+      this.loginButton = page.locator('//button[text()=\'Login\']');
     }
-  
-    
-  }
 
-  module.exports = LoginPage ;
+    async fillLoginForm(username, password) {
+      await this.inputEmail.fill(username);
+      await this.inputPassword.fill(password);
+      await this.loginButton.click();
+    }    
+  }
   
