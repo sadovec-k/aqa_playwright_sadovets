@@ -1,11 +1,10 @@
-import BasePage from './BasePage.js';
+import { BasePage } from './BasePage.js';
 
-class ProfilePage extends BasePage {
+export class ProfilePage extends BasePage {
     constructor(page) {
       super(page);
       this.userNavigationButton = page.locator('//button[@id="userNavDropdown"]');
+      this.addCarButton = page.locator('//button[text()="Add car"]');
     }
   
   }
-
-  module.exports = ProfilePage;
