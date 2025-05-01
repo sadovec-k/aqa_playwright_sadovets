@@ -15,4 +15,4 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run your tests
-        run: npx playwright install chromium && npx playwright test  e2e/playwright_actions/playwright_api.spec.js --project=chromium
+        run: npx playwright install chromium && npx playwright test playwright_actions/playwright_api.spec.js --project=chromium
