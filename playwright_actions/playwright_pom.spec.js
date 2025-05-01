@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
 import * as Utils from './utils/Utils.js';
-import HomePage from './pages/HomePage.js';
-import Login from './pages/LoginPage.js';
-import RegistrationPage from './pages/RegistrationPage.js';
-import ProfilePage from './pages/ProfilePage.js';
+import {HomePage} from './pages/HomePage.js';
+import {Login} from './pages/LoginPage.js';
+import {RegistrationPage} from './pages/RegistrationPage.js';
+import {ProfilePage} from './pages/ProfilePage.js';
 
 let newUserEmail = '';
 
