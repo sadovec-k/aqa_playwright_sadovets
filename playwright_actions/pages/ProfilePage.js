@@ -5,6 +5,7 @@ export class ProfilePage extends BasePage {
       super(page);
       this.userNavigationButton = page.locator('//button[@id="userNavDropdown"]');
       this.addCarButton = page.locator('//button[text()="Add car"]');
+      this.profileButton = page.locator('.-profile');
     }
   
   }
